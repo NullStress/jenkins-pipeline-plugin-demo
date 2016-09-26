@@ -1,6 +1,4 @@
 node {
-
-
     currentBuild.result = "SUCCESS"
 
     try {
@@ -11,6 +9,7 @@ node {
 
         stage 'Test'
 
+        sh 'chmod +x gradlew'
         sh './gradlew clean build'
     }
     catch (err) {

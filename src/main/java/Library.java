@@ -5,7 +5,7 @@
  * @author Kristian, @date 25.09.16 11:37
  */
 public class Library {
-    
+
     public void helloWorld() {
         System.out.println("Hello world");
     }
