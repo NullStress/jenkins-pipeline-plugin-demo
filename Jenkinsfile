@@ -9,8 +9,8 @@ node {
 
         stage 'Test'
 
-        sh 'chmod +x gradlew'
-        sh './gradlew clean build'
+        def mavenHome = tool 'M3'
+        sh '${mavenHome}/bin/mvn clean install'
     }
     catch (err) {
 
